@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<h2>Register Form</h2>
+	<center>
+	<form action="hvhg.html" method="get" target="_blanck">
+
+	<fieldset >
+		<legend>User Information system</legend>
+
+		Name:<input type="text" name="name" required pattern="[a-zA-Z]{3,6}" title="3 to 6 character only"><br><br>
+
+		Email:<input type="email" name="email"><br><br>
+		Mobile:<input type="text" name="mobile" required pattern="[0-9]{10}" title="10 digit only"><br><br>
+		Date:<input type="date" name="date"><br><br>
+
+		Password:<input type="password" name="name" maxlength="6" minlength="3" title="password must be 3 to 6 character"><br><br>
+
+		Gender:<input type="radio" name="gender" value="male">Male
+		<input type="radio" name="gender" value="female">Female<br><br>
+		Language:<input type="checkbox" name="chechbox">Hindi
+		<input type="checkbox" name="chechbox">English
+		<input type="checkbox" name="chechbox">Gujrati<br><br>
+		Selest your country:
+		<select>
+			<option hidden>Select your country:</option>
+			<option>INDIA</option>
+			<option>USA</option>
+			<option>UAE</option>
+		</select><br><br>	
+		Address;<textarea rows="10" cols="50"></textarea><br><br>
+		Date and Time:<input type="datetime-local" name="datetime"><br><br>
+		color:<input type="color" name="color"><br><br>
+		Quantity:<input type="number" name="quantity" max="5" min="1"><br><br>
+		Upload your image:<input type="file" name="file"><br><br>
+		<input type="submit" name="submit" value="Register"><br><br>
+		<input type="reset" name="reset"><br><br>
+	</fieldset>
+	</form>
+	</center>
+
+
+</body>
+</html>

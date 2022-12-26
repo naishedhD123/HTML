@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<!-- Form methods
+
+	get ==> default ==> not secure ==> shows data in URL =>limited
+
+	post ==>    secure ==> does not shows data in URL  => not limited -->
+
+	<center>
+	<form action="login.html"  method="post">
+
+	Name :
+	<!-- <input type="text" required pattern="[a-zA-Z]+" title="3 to 6 characters only.."> -->
+
+	<input type="text" name="nm" required pattern="[a-zA-Z]{3,6}" title="3 to 6 characters only..">
+
+
+
+	<br><br>
+	Email:<input type="text" name=""><br><br>
+
+	<!-- niravpatel@tops123.com -->
+
+	Mobile :
+	<!-- <input type="text" required title="10 digits only" pattern="[0-9]+"> -->
+
+	<input type="text" required title="10 digits only" pattern="[0-9]{10}">
+
+
+
+	<br><br>
+	Date:<input type="date" name=""><br><br>
+	Password:<input type="password" name="pwd" maxlength="6" minlength="3"><br><br>
+
+	gender:<input type="radio" name="gender"> Male
+			<input type="radio" name="gender"> Female
+
+
+
+	<br><br>
+
+
+	Languages: <input type="checkbox" name=""> Hindi
+	<input type="checkbox" name=""> Gujarati
+	<input type="checkbox" name=""> English
+
+
+	<br><br>
+Select your country:
+	<select>
+		<option hidden> --- Select Your Country --- </option>
+		<option>India</option>
+		<option>USA</option>
+		<option>UAE</option>
+		<option>Australia</option>
+		
+	</select>
+
+
+	<br><br>
+
+	Address: <textarea rows="10" cols="50"></textarea> 
+
+	<br><br>
+
+	Date-Time:<input type="datetime-local" name=""><br><br>
+	Color:<input type="color" name=""><br><br>
+
+	Quantity:<input type="number" name="" max="5" min="1"><br><br>
+
+	Upload your Image:<input type="file" name="" multiple><br><br>
+	<input type="submit" name="" value="Register"><br><br>
+	<input type="reset" name="" value="yutyu"><br><br>
+
+</form>
+
+</center>
+
+</body>
+</html>

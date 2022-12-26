@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+	
+<div class="main">
+	<div class="register">
+	<form id="register" action="hvhg.html" method="_post" target="_blanck">
+	
+		<legend>User information</legend><br>
+		Name:<br> <input type="text" name="name" placeholder="Enter your name"><br><br>
+		Email:<br> <input type="email" name="email" placeholder="Enter your email"><br><br>
+		Mobile:<br> <input type="text" name="mobile" placeholder="Enter your mobile nu"  pattern="[0-9]{10}" title="Enter 10 digit"><br><br>
+		Date:<br> <input type="date" name="date" placeholder="Enter date"><br><br>
+
+		Password:<br> <input type="password" name="password" placeholder="Enter Password" required minlength="3" maxlength="6" title="Enter 3 to 6 "><br><br>
+
+		Gender: <input type="radio" name="gender">Male
+				<input type="radio" name="gender">Female
+				<input type="radio" name="gender">Other<br><br>
+
+		Language: <input type="checkbox" name="checkbox">Hindi
+					<input type="checkbox" name="checkbox">English
+					<input type="checkbox" name="checkbox">Gujrati<br><br>
+
+		Select your country:<br> 
+		<select>
+			<option hidden>Select your country</option>
+			<option>India</option>
+			<option>USA</option>
+			<option>UAE</option>	
+		</select>
+		<br><br>
+
+		Address:<br> <textarea rows="5" cols="30" placeholder="Enter your Address"></textarea><br><br>
+
+		Date and Time:<br> <input type="datetime-local" name="datetime"><br><br>
+		color: <input type="color" name="color"> &nbsp;&nbsp;&nbsp;Quantity: <input type="number" name="quantity" min="1" max="5"><br><br>
+		Upload:<br> <input type="file" name="file"><br><br>
+
+		<input type="submit" name="submit"> &nbsp;&nbsp;&nbsp;<input type="reset" name="reset"><br><br>
+	</form><br><br>
+	</div> <!--end register-->
+</div> <!--main end-->
+	
+
+	
+
+</body>
+</html>
